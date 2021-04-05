@@ -146,6 +146,7 @@
   width: 100%;
   text-align: center;
   padding: 20px;
+  display: none;
   /* padding-left: 0; */
 }
 .nav-list .list-item {
@@ -191,5 +192,11 @@
   display: inline-block;
   margin: 0;
   padding: 0;
+}
+.active {
+  display: block;
+}
+.inactive {
+  display: none;
 }
 }
