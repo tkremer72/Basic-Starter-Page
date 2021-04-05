@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
      <meta charset="UTF-8">
-     <meta name="description" content="Basic static page layout">
+     <meta name="description" content="Basic static responsive page layout">
      <meta name="author" content="Thomas E. Kremer">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,17 +19,32 @@
      <title>Basic Page Setup</title>
 </head>
 <body>
-     <div class="header">
-          
-          <a href="#default" class="logo">
-               <img src="src/assets/images/seethrough_1.png" alt="seethrough_1" class="logo-image">
-               WebTek</a>
-          <div class="header-right">
-            <a class="active" href="#home">About</a>
-            <a href="#contact">Contact</a>
-<!--             <a href="#about">About</a>-->          
-     </div>
+   <nav class="navbar">
+
+        <div class="logo-container">
+              <a href="#">
+                   <img src="src/assets/images/seethrough_1.png" alt="seethrough_1" class="logo-image">
+                   <span class="logo-text">Webtek</span>
+              </a>
+       </div>
+
+        <ul class="nav-list">
+             <li class="list-item">
+                  <a href="#">About Us</a>
+             </li>
+             <li class="list-item">
+                  <a href="#">Contact</a>
+             </li>
+             <li class="list-item">
+                  <a href="#">Support</a>
+             </li>
+        </ul>
+        <div class="menu">
+             <div class="menu-line"></div>
+             <div class="menu-line"></div>
+             <div class="menu-line"></div>
         </div>
+   </nav>
 <div class="main-content">
      <p class="my-story">
           Not many have a story like mine. At 2 years old I was diagnosed with leukemia 
@@ -37,6 +52,7 @@
           them a compromised immune system. I caught a cold that turned into pneumonia 
           and I died. It didn’t stick. In that time I saw things that would influence my life 
           profoundly. I can’t explain what happened but when I woke up, the pneumonia was 
+          <a href="#about-me" id="about-me"></a>
           gone along with the leukemia. I have also overcome Pancreatic Cancer, Crohn's Disease, 
           and Diabetes just to name a few of the hurdles I found myself lifted over. I give all glory 
           to God, but I tell you these things not to garner sympathy or convince you that my God is 
@@ -54,7 +70,7 @@
              </div>
             <div class="webmaster-contact">
                  <span class="footer-info">This page created and designed by</span>
-                 <a href="mailto: tkremer@nc.rr.com" class="webmaster">Thomas E. Kremer</a>
+                 <a href="mailto: tkremer@nc.rr.com" class="webmaster" id="contact">Thomas E. Kremer</a>
             </div>
         </div>
         
