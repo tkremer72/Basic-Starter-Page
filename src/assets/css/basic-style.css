@@ -102,6 +102,15 @@ body {
      background-color: #FFFFFF;
      text-align: center;
 }
+
+.my-story {
+  margin-top: 25px;
+  padding: 0 25px 0 25px;
+  font-family: Poppins;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 16px;
+}
    /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
    @media screen and (max-width: 500px) {
      .header a {
