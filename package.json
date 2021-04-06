@@ -1,0 +1,44 @@
+{
+  "name": "basic-setup",
+  "version": "1.0.0",
+  "description": "This project is my basic responsive page set up, it has a header and a footer.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify -t [ babelify ] ./src/js -o ./dist/build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tkremer72/Basic-Starter-Page.git"
+  },
+  "keywords": [
+    "Babel",
+    "Bootstrap",
+    "CSS",
+    "ESLint",
+    "Flexbox",
+    "HTML",
+    "JavaScript",
+    "jQuery",
+    "Git"
+  ],
+  "author": "Thomas E. Kremer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tkremer72/Basic-Starter-Page/issues"
+  },
+  "homepage": "https://github.com/tkremer72/Basic-Starter-Page#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.13.14",
+    "@babel/core": "^7.13.14",
+    "@babel/plugin-proposal-decorators": "^7.13.5",
+    "@babel/plugin-proposal-function-bind": "^7.12.13",
+    "@babel/preset-env": "^7.13.12",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "babelify": "^10.0.0",
+    "eslint": "^7.23.0"
+  },
+  "dependencies": {
+    "browserify": "^17.0.0"
+  }
+}
