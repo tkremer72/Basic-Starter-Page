@@ -38,7 +38,7 @@
   color: rgba(0, 0, 0, 1);
 }
 .navbar a:hover {
-  color: blue;
+  color: #94A2FB;
 }
 .navbar {
   align-items: center;
@@ -63,7 +63,7 @@
   display: none;
 }
 .menu-line {
-  background-color: green;
+  background-color: #94A2FB;
   width: 25px;
   height: 3px;
   margin-bottom: 4px;
@@ -92,6 +92,7 @@
   text-decoration: none;
 }
 .footer-info {
+  width: 100%;
   font-family: Poppins;
   font-weight: 200;
   font-size: 18px;
@@ -102,7 +103,7 @@
 .webmaster-contact {
   margin-top: 13px;
 }
-.footer-container {
+.footer-container-fluid {
      display: flex;
      justify-content: space-evenly;
      position: fixed;
@@ -124,13 +125,19 @@
 
 /* Media query for smaller devices, hamburger menu */
 @media all and (max-width: 480px) {
+  /* Center the main content, justify the text on small screens */
+  .main-content {
+    padding-bottom: 125px;
+    text-align: justify;
+  }
+/* Style the navigation and the header */
   .navbar {
     flex-direction: column;
     position: relative;
   }
   .logo-container {
     width: 100%;
-    margin-left: 10px;
+    margin-left: 25px;
     margin-top: 10px;
     margin-bottom: 5px;
   }
@@ -138,8 +145,8 @@
 .menu {
   display: block;
   position: absolute;
-  right: 10px;
-  top: 10px;
+  right: 25px;
+  top: 30px;
 }
 .nav-list {
   list-style-type: none;
@@ -147,56 +154,55 @@
   text-align: center;
   padding: 20px;
   display: none;
-  /* padding-left: 0; */
 }
 .nav-list .list-item {
   display: block;
   border-top: 1px solid black;
   padding: 10px;
 }
-.footer-container {
-  display: flex;
+/* Style the footer container and information */
+.footer-container-fluid {
+  padding: 10px;
   flex-direction: column;
-  justify-content:inherit;
-  position: fixed;
-  left: 0;
-  bottom: 0;
   width: 100%;
-  background-color: #FFFFFF;
-  text-align: center;
+  height: 125px;
 }
-.copyright {
-  font-family: Montserrat Alternates;
-  font-weight: 600;
-  font-size: 20px;
-}
+/* Style the logo and logo text */
 .footer-logo {
-  margin-top: 0px;
-  margin-bottom: 10px;
+  margin-top: 5px;
   width: 45px;
-  height: 45px;
+  height: auto;
 }
 .footer-text {
-  margin-top: 25px;
   font-family: Montserrat Alternates;
   font-weight: 600;
-  font-style: normal;
-  font-size: 25px;
-}
-.logo-copyright {
-  display: inline-block;
-  margin: 0;
-  padding: 0;
+  font-style: none;
+  font-size: 28px;
+  line-height: 32px;
+  letter-spacing: 0.03em;
 }
 .webmaster-contact {
-  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+.footer-info {
   margin: 0;
   padding: 0;
+  font-family: Poppins;
+  font-weight: 200;
+  font-size: 17px;
+  line-height: 21px;
+  letter-spacing: 0.03em;
 }
+.webmaster {
+  font-family: Poppins;
+  font-weight: 200;
+  font-size: 16px;
+  color: #94A2FB;
+}
+/* Show the hamburger menu  */
 .active {
   display: block;
 }
-.inactive {
-  display: none;
-}
+
 }

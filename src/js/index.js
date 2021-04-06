@@ -1,16 +1,13 @@
+/* Peferred method with JS Event Listener */
 
-/* Toggle hamburger menu */
-/* const toggleButton = document.getElementById('toggle-menu');
+const toggleButton = document.getElementById('toggle-menu');
 const naviList = document.getElementById('navi-list');
 toggleButton.addEventListener('click', () => {
-           naviList.classList.toggle('active');
-}); */
+     naviList.classList.toggle('active');
+})
 
-
-function toggleMenu() {
-     const toggleButton = document.getElementById('toggle-menu');
+/* HTML Event Method */
+/* function toggleMenu() {
      const naviList = document.getElementById('navi-list');
-     toggleButton.addEventListener('click', () => {
-          naviList.classList.toggle('active');
-     });
-}
+     naviList.classList.toggle('active');
+} */
