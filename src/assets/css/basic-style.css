@@ -4,23 +4,9 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-/* Style the logo image and text */
-/* .company-logo {
-     text-decoration: none;
+body {
+  display: inline-block;
 }
-.logo-image {
-     width: 75px;
-     height: 75px;
-}
-.logo-text {
-     font-family: Montserrat Alternates;
-     font-weight: 600;
-     font-style: none;
-     font-size: 35px;
-     color: rgba(0, 0, 0, 1);
-     line-height: 32px;
-     letter-spacing: 0.03em;
-}   */
 .logo-image {
   width: 55px;
   height: auto;
@@ -76,11 +62,11 @@
      width: 55px;
      height: 55px;
 }
-.copyright {
+/* .copyright {
   font-family: Montserrat Alternates;
   font-weight: 600;
   font-size: 25px;
-}
+} */
 .footer-text {
   margin-top: 25px;
   font-family: Montserrat Alternates;
@@ -113,22 +99,74 @@
      background-color: #FFFFFF;
      text-align: center;
 }
-
-.my-story {
-  margin-top: 25px;
-  padding: 0 25px 0 25px;
-  font-family: Poppins;
-  font-weight: 200;
-  font-style: normal;
-  font-size: 16px;
+.container {
+  margin-top: 15px;
+  display: block;
+  text-align: center;
 }
+.one {
+  width: 45.5%;
+  text-align: left;
+  display: block;
+  float: left;
+}
+.two {
+  width: 45.5%;
+  text-align: left;
+  display: block;
+  float: right;
+}
+.three {
+  width: 45.5%;
+  text-align: left;
+  display: block;
+  float: left;
+}
+.four {
+  width: 45.5%;
+  text-align: left;
+  display: block;
+  float: right;
+}
+
 
 /* Media query for smaller devices, hamburger menu */
 @media all and (max-width: 480px) {
+  body {
+    display: block;
+  }
   /* Center the main content, justify the text on small screens */
-  .main-content {
-    padding-bottom: 125px;
+  .container {
+   display: block;
+   text-align: justify;
+  }
+  h2 {
+    text-align: center;
+  }
+  .one {
+    width: 100%;
     text-align: justify;
+    display: block;
+    float: non;
+  }
+  .two {
+    width: 100%;
+    text-align: justify;
+    display: block;
+    float: right;
+  }
+  .three {
+    width: 100%;
+    text-align: justify;
+    display: block;
+    float: left;
+  }
+  .four {
+    width: 100%;
+    text-align: justify;
+    display: block;
+    float: right;
+    margin-bottom: 135px;
   }
 /* Style the navigation and the header */
   .navbar {
@@ -136,21 +174,19 @@
     position: relative;
   }
   .logo-container {
-    width: 100%;
-    margin-left: 25px;
+    margin-left: 5px;
     margin-top: 10px;
     margin-bottom: 5px;
   }
 /* Show menu */
 .menu {
-  display: block;
+  display: none;
   position: absolute;
   right: 25px;
   top: 30px;
 }
 .nav-list {
   list-style-type: none;
-  width: 100%;
   text-align: center;
   padding: 20px;
   display: none;
@@ -164,7 +200,6 @@
 .footer-container-fluid {
   padding: 10px;
   flex-direction: column;
-  width: 100%;
   height: 125px;
 }
 /* Style the logo and logo text */
@@ -204,5 +239,4 @@
 .active {
   display: block;
 }
-
 }
